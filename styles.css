@@ -16,67 +16,72 @@ body {
 main {
     display: flex;
     max-width: 600px;
-    max-height: 450px;
+    height: 450px;
 }
 
-#image {
+.image {
     display: flex;
     width: 50%;
-    max-height: 100%;
 }
 
-#information {
+.information {
     display: block;
     width: 50%;
-    max-height: 100%;
     padding: 32px;
     background-color: hsl(0, 0%, 100%);
 }
 
-#information h2 {
+.product {
     font-family: Montserrat, sans-serif;
-    font-size: 12px;
-    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
     color: hsla(228, 12%, 48%, .6);
 }
 
-#information h1 {
+.information h1 {
     font-family: Fraunces, sans-serif;
     margin-top: 18px;
-    line-height: 33px;
+    line-height: 1;
     color: hsl(212, 21%, 14%);
 }
 
-#description {
+.description {
     font-family: Monsterrat, sans-serif;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: hsl(228, 12%, 48%);
     padding: 18px 0;
     line-height: 23px;
     letter-spacing: 1px;
 }
 
-p:not(#description) {}
+.discount {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+}
 
 .price {
     font-family: Fraunces, sans-serif;
     color: hsl(158, 36%, 37%);
-    font-size: 32px;
-    padding: 15px 0;
+    font-size: 2rem;
 }
 
-.old-price {
+.sr-only {
+    visibility: hidden;
+}
+
+del {
     font-family: Montserrat, sans-serif;
-    font-size: 12px;
-    text-decoration: line-through;
     color: hsl(228, 12%, 48%);
 }
 
 button {
     width: 100%;
-    padding: 15px;
+    padding: 1em;
     border: none;
     border-radius: 10px;
+    margin-top: 30px;
     font-family: Montserrat, sans-serif;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
@@ -85,9 +90,4 @@ button {
 
 button:active {
     background-color: hsl(158, 36%, 18%);
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
 }
