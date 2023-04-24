@@ -15,7 +15,7 @@ body {
 
 main {
     display: flex;
-    max-width: 600px;
+    max-width: 36rem;
     height: 450px;
 }
 
@@ -27,7 +27,7 @@ main {
 .information {
     display: block;
     width: 50%;
-    padding: 32px;
+    padding: 2em;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -41,7 +41,7 @@ main {
 
 .information h1 {
     font-family: Fraunces, sans-serif;
-    margin-top: 18px;
+    margin-top: 0.6em;
     line-height: 1;
     color: hsl(212, 21%, 14%);
 }
@@ -50,15 +50,15 @@ main {
     font-family: Monsterrat, sans-serif;
     font-size: 0.9rem;
     color: hsl(228, 12%, 48%);
-    padding: 18px 0;
-    line-height: 23px;
-    letter-spacing: 1px;
+    padding: 1em 0;
+    line-height: 1.5;
+    letter-spacing: 1;
 }
 
 .discount {
     display: flex;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.5em;
 }
 
 .price {
@@ -81,7 +81,7 @@ button {
     padding: 1em;
     border: none;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 2em;
     font-family: Montserrat, sans-serif;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
