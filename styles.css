@@ -1,70 +1,108 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+body,
+main,
+img,
+p,
+h1,
+span,
+del,
+button,
+svg,
+footer {
     margin: 0;
-    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh !important;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font: inherit;
+}
+
+/*END RESET CSS*/
+
+body {
     background-color: hsl(30, 38%, 92%);
+    overflow: hidden;
 }
 
 main {
     display: flex;
-    max-width: 36rem;
-    height: 450px;
+    flex-direction: column;
+    height: 100%;
+    margin: 2rem 1.5rem;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .image {
     display: flex;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    overflow: hidden;
 }
 
+img {
+    transform: scaleY(0.65);
+    width: 100%;
+}
+
+/*END SECTION TOP*/
+
 .information {
-    display: block;
-    width: 50%;
-    padding: 2em;
-    background-color: hsl(0, 0%, 100%);
+    margin: 1.5em;
 }
 
 .product {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    color: hsla(228, 12%, 48%, .6);
+    letter-spacing: 0.5em;
+    margin: 0.5em;
+    color: hsl(228, 12%, 48%);
 }
 
-.information h1 {
+h1 {
     font-family: Fraunces, sans-serif;
-    margin-top: 0.6em;
+    font-size: 2.5rem;
     line-height: 1;
-    color: hsl(212, 21%, 14%);
 }
 
 .description {
-    font-family: Monsterrat, sans-serif;
-    font-size: 0.9rem;
-    color: hsl(228, 12%, 48%);
-    padding: 1em 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
     line-height: 1.5;
-    letter-spacing: 1;
+    padding: 1em 0;
+    color: hsl(228, 12%, 48%);
 }
 
-.discount {
+.disconunt {
     display: flex;
-    text-align: center;
-    margin-top: 1.5em;
 }
 
 .price {
     font-family: Fraunces, sans-serif;
+    font-size: 2.5rem;
     color: hsl(158, 36%, 37%);
-    font-size: 2rem;
 }
 
 .sr-only {
@@ -77,17 +115,20 @@ del {
 }
 
 button {
+    display: block;
     width: 100%;
     padding: 1em;
-    border: none;
-    border-radius: 10px;
-    margin-top: 2em;
     font-family: Montserrat, sans-serif;
+    font-weight: 700;
     background-color: hsl(158, 36%, 37%);
     color: hsl(0, 0%, 100%);
-    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 1.5em 0;
 }
 
-button:active {
-    background-color: hsl(158, 36%, 18%);
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
