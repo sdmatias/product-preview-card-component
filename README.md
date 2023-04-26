@@ -34,10 +34,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://sdmatias.github.io/product-preview-card-component/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+My process was first to write the HTML code with the corresponding semantics, then create the styles for mobile devices and finally with a media query I made the design for larger devices.
 
 ### Built with
 
